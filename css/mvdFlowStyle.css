@@ -1,0 +1,19 @@
+@import url('fontAwesome.css');
+#steps {width: 100%;margin: 50px auto;margin-left: 25px;}
+.step {width: 48px;height: 48px;background-color: white;display: inline-block;border: 4px solid;border-color: #cdd0da;
+  border-radius: 50%;color: #cdd0da;font-weight: 600;text-align: center;line-height: 43px;cursor: pointer;}
+.step:first-child {line-height: 51px;}
+.step:nth-child(n+2) {margin: 0 0 0 100px;transform: translate(0, -12px);}
+.step:nth-child(n+2):before {width: 75px;height: 3px;display: block;background-color: #cdd0da;transform: translate(-95px, 21px);content: '';}
+.step:after {width: 150px;display: block;transform: translate(-55px, 10px);color: #cdd0da;content: attr(data-desc);font-size: 13px;font-weight: normal;}
+.step:first-child:after {  transform: translate(-55px, -1px);}
+.step.active {  border-color: #73b5e8;background-color: #73b5e8;color: white;}
+.step.active:before {background: linear-gradient(to right, #58bb58 0%, #73b5e8 100%);}
+.step.active:after {color: #73b5e8;font-weight: bold;}
+.step.done {background-color: #58bb58;border-color: #58bb58;color: white;}
+.step.done:after {color: #58bb58;font-weight: bold;}
+.step.done:before {background-color: #58bb58;}
+#details {width: 100%;}
+.detail{display:none;}
+.verDetalle{display:block!important;}
+#stepsFooter {width: 100%;margin-bottom: 50px;}

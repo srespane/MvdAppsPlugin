@@ -1,0 +1,264 @@
+/*@import url('entypo.css');*/
+@import url('fontAwesome.css');
+.appsContainer {width: 90%;margin: 0 auto;text-align: center;}
+.apps {position: relative;list-style: none;margin: auto!important;width: 95%;padding: 0;}
+
+#selectedCat{text-align: center;}
+#selectedCatDescription{text-align: left;}
+
+.apps li {
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin: 5px!Important;
+  padding: 0;
+  list-style: none;
+  background-color: #ECF0F1;
+  border-radius: 4px;
+}
+.apps li:focus a::after, .apps li:hover a::after {
+  opacity: 1;
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.apps li:focus .appContent img, .apps li:hover .appContent img {
+/*
+  -moz-transform: scale3d(1.2, 1.2, 0);
+  -webkit-transform: scale3d(1.2, 1.2, 0);
+  transform: scale3d(1.2, 1.2, 0);
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -moz-transition: -moz-transform 15000ms cubic-bezier(0, 0, 0.8, 0.9);
+  -o-transition: -o-transform 15000ms cubic-bezier(0, 0, 0.8, 0.9);
+  -webkit-transition: -webkit-transform 15000ms cubic-bezier(0, 0, 0.8, 0.9);
+  transition: transform 15000ms cubic-bezier(0, 0, 0.8, 0.9);
+*/
+  -webkit-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  opacity: .8;
+}
+.apps li:focus p,
+.apps li:focus h2,
+.apps li:focus .appInfo, .apps li:hover p,
+.apps li:hover h2,
+.apps li:hover .appInfo {opacity: 1;}
+.apps li.app .appContent {padding: 0;}
+.apps li.app .appInfo {
+  background-color: rgba(0, 0, 0, 0.7);
+  -moz-transition: opacity 100ms ease-out;
+  -o-transition: opacity 100ms ease-out;
+  -webkit-transition: opacity 100ms ease-out;
+  transition: opacity 100ms ease-out;
+}
+.apps li.app {text-align: center;border-radius: 37px;}
+.apps li.app .appInfo {display: table;height: 100%;padding: 0;width: 100%;border-radius: 4px;}
+.apps li.app .info {display: table-cell;vertical-align: middle;}
+
+.apps h3{color:white!important;margin-left: 3px;margin-right: 3px;}
+.apps h4{color:white!important;margin-left: 3px;margin-right: 3px;}
+
+.apps p{color:white!important;padding-top: 0px!important;line-height: 18px;}
+
+.apps a,
+.apps button {color: white;display: block;height: 100%;position: relative;width: 100%;}
+.apps .appContent,
+.apps .appInfo {bottom: 0;left: 0;overflow: hidden;padding: 40px;position: absolute;right: 0;top: 0;}
+.apps .appContent {background-color: transparent;}
+.apps .appContent img {
+  width: 100%;
+  border-radius: 37px;
+  -moz-transform: scale3d(1, 1, 1);
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  -moz-transition: -moz-transform 200ms ease-out;
+  -o-transition: -o-transform 200ms ease-out;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+}
+.apps .appInfo {
+  opacity: 0;
+  -moz-transition: opacity 250ms ease-out;
+  -o-transition: opacity 250ms ease-out;
+  -webkit-transition: opacity 250ms ease-out;
+  transition: opacity 250ms ease-out;
+}
+.apps .appInfo p,
+.apps .appInfo h2 {
+  opacity: 0;
+  -moz-transition: opacity 200ms ease-in 100ms;
+  -o-transition: opacity 200ms ease-in 100ms;
+  -webkit-transition: opacity 200ms ease-in;
+  -webkit-transition-delay: 100ms;
+  transition: opacity 200ms ease-in 100ms;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+
+.apps * {box-sizing: border-box;}
+
+
+/*CATEGORIAS*/
+.boton {
+  border: none;
+  background: linear-gradient(to bottom, #3498db, #2980b9);
+  border-radius: 3px;
+  font-family: Arial;
+  color: #ffffff;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  margin: 5px;
+  width:60px;
+  height:60px;
+}
+
+.boton i{font-style: normal;font-size: 30px;color: #ebebeb;}
+
+.boton:hover i{
+    color: white;
+}
+
+.boton:hover i {
+  filter: glow(Color=white, Strength=8) blur(add=false, direction=0, strength=1) blur(add=false, direction=180, strength=1) blur(add=false, direction=270, strength=1) blur(add=false, direction=90, strength=1);
+  text-shadow: 0 0 15px white, 0 0 5px white;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.activo {
+  background: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+  filter: glow(Color=white, Strength=8) blur(add=false, direction=0, strength=1) blur(add=false, direction=180, strength=1) blur(add=false, direction=270, strength=1) blur(add=false, direction=90, strength=1);
+  text-shadow: 0 0 15px white, 0 0 5px white;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.activo i{color: white;}
+
+
+/*MODAL*/
+.popup{
+	position: fixed;
+	top: -100vh;
+	left: 0;
+	z-index: 9999999;
+	background: rgba(0,0,0, 0.75);
+	width: 100vw;
+	height: 100vh;
+	opacity: 0;
+	-webkit-transition: opacity  0.35s ease;
+	-moz-transition: opacity 0.35s ease;
+	-o-transition: opacity 0.35s ease;
+	transition: opacity 0.35s ease;
+}
+
+.popup .popUpContainer{
+    width: 500px;
+    position: relative;
+		margin: 10% auto;
+		padding: 5px 20px 13px 20px;
+		border-radius: 10px;
+	top: -100vh;
+	-webkit-transition: top  0.35s ease;
+	-moz-transition: top 0.35s ease;
+	-o-transition: top 0.35s ease;
+	transition: top 0.35s ease;
+
+  /* Trick to properly center the element by using negative 
+  1/2 length of element as margin left and top */
+  
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  
+  z-index: 9999999; 
+}
+
+@media all and (max-width:700px)
+{
+    .popup .popUpContainer{
+        width: 80%;
+    }
+}
+
+/*FALTA HACER RESPONSIVO!!!!*/
+.cerrarModal {
+    background: #606061;
+    color: #FFFFFF;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 31px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.cerrarModal i{color:#ffffff;}
+.cerrarModal:hover { background: #00d9ff; }
+/* When popup is targeted, by clicking on link with #popup in HTML */
+.popup:target{opacity: 1;top: 0;}
+.popup .closePopUpOutSide{
+  position: absolute;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999991; 
+    cursor: default;
+}
+.popup:target .popUpContainer{
+  top: 50px;
+    -webkit-transition: top  0.35s ease;
+    -moz-transition: top 0.35s ease;
+    -o-transition: top 0.35s ease;
+    transition: top 0.35s ease;
+}
+.popup .closePopUpOutSide{position: absolute;top: 0;left:0;width: 100%;height: 100%;z-index: 9999991;}
+#appTitle{padding-bottom: 0px!important;}
+#appDesc{padding-bottom: 0px!important;}
+.lnkBtn {
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  width: 100px;
+}
+.lnkBtn {box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);}
+.btn-links {color: #404040!important;background-color: #8ED2E4;border-color: #8ED2E4;}
+
+
+.popup a span{display: block;}
